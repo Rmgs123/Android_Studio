@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Task3</string>
+    <string name="app_name">Task4</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="activity">Активность</string>
@@ -7,4 +7,12 @@
     <string name="list">List</string>
     <string name="start_title">Время потренить!</string>
     <string name="start_text">Нажимай на кнопку ниже и начинаем трекать активность</string>
+    <string name="sport">Спорт</string>
+    <string name="distance">Дистанция</string>
+    <string name="date">Дата</string>
+    <string name="time">Время</string>
+    <string name="start">Старт</string>
+    <string name="finish">Финиш</string>
+    <string name="commentaries">Коммент</string>
+    <string name="nickname">Ник</string>
 </resources>

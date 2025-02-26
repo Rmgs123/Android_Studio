@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         binding = ActivityMainBinding.inflate(layoutInflater)
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .add(R.id.fragment_container, ActivityFragment(), "ACTIVITY_FRAGMENT")
@@ -58,14 +59,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         if (existingFragment != null) {
-            //Log.d("FragmentTransaction", "Showing existing fragment: $tag")
+
             transaction.show(existingFragment)
         } else {
-            //Log.d("FragmentTransaction", "Adding new fragment: $tag")
+
             transaction.add(R.id.fragment_container, fragment, tag) // Используем add вместо replace
         }
 
         transaction.commitNow()
+
     }
 
 }
