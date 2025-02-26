@@ -1,14 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Task" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    <style name="Theme.Task3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
 
     </style>
-
-    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
-        <item name="backgroundTint">@color/purple</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="Theme.Task" parent="Base.Theme.Task" />
 </resources>
