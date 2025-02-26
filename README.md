@@ -1,6 +1,6 @@
 # Task 3
 
-This is a task where I created my activity with elements as such: BottomNavigationView and FragmentContainerView. There are currently no way to create fragments so I left it all blank.
+This is a task where I created my activity with such elements: BottomNavigationView, FragmentContainerView. There are currently no way to create fragments so I left it all blank.
 
 Preview:
 
