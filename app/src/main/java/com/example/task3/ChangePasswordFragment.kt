@@ -39,8 +39,6 @@ class ChangePasswordFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<ImageView>(R.id.backButton).setOnClickListener {
 
-            //Log.d("FragmentTransaction", "After transaction: ${parentFragmentManager.fragments.map { it.tag }}")
-
             parentFragmentManager.beginTransaction()
                 .replace(
                     R.id.fragment_container,

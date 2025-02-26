@@ -15,7 +15,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerViewAdapter(
-    private val items: List<ActivityItem>,
+    private var items: List<ActivityItem>,
     private val onActivityClick: (ActivityItem.Activity) -> Unit
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
@@ -54,6 +54,12 @@ class RecyclerViewAdapter(
     }
 
     override fun getItemCount(): Int = items.size
+
+
+    fun setItems(newItems: List<ActivityItem>) {
+        items = newItems
+        notifyItemRangeInserted(0, newItems.size)
+    }
 
     class SectionViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val textView: TextView = view.findViewById(R.id.sectionTextView)
@@ -120,6 +126,8 @@ sealed class ActivityItem {
         val time: String,
         val sport: String,
         val date: String,
+        val startHour: String,
+        val endHour: String,
         val user_nick: String
     ) : ActivityItem()
 }
