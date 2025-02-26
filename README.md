@@ -1,6 +1,6 @@
 # Task 6
 
-In this final task_6 I created (again uploaded all my local work at once) DB for storing all of my user's activities and displaying them.
+In this final task_6, that I created (uploaded all my local work at once to github) DB for storing all of my user's activities and displaying them.
 
 Preview:
 
