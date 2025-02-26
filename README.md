@@ -4,11 +4,11 @@ Layout of the first three application screens.
 
 Preview:
 
-https://github.com/Rmgs123/Android_Studio/tree/task_2
+![image](https://github.com/user-attachments/assets/8a0ee4b0-169a-4de5-8846-c0181a9feb35)
 
 _______
 
-https://github.com/Rmgs123/Android_Studio/tree/task_2
+![image](https://github.com/user-attachments/assets/ef8590d0-86e0-4268-b80c-88ad14884d8e)
 
 _______
 
