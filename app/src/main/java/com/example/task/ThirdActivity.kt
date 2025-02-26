@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputType
+import android.view.ViewGroup
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,10 +17,20 @@ class ThirdActivity : AppCompatActivity() {
     private var isPasswordVisible = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivityThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.root.setPadding(32, 16, 32, 16) // Общие отступы по краям
+
+        listOf(binding.textInputLayout, binding.textInputLayout2).forEach {
+            it.layoutParams = (it.layoutParams as ViewGroup.MarginLayoutParams).apply {
+                setMargins(24, 0, 24, 0) // Отступы слева и справа
+            }
+        }
 
         binding.imageView.setOnClickListener{
             val intent = Intent(this,MainActivity::class.java)

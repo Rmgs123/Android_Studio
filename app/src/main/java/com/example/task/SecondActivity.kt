@@ -15,6 +15,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.task.databinding.ActivitySecondBinding
 
+import android.view.ViewGroup
+
+
 class SecondActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySecondBinding
     private var isPasswordVisible = false // making password invisible
@@ -22,12 +25,23 @@ class SecondActivity : AppCompatActivity() {
     private var selectedGender: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = ActivitySecondBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val genderOptions = arrayOf("Мужcкой", "Женский")
+
+
+        binding.root.setPadding(32, 16, 32, 16) // Общие отступы по краям
+
+        listOf(binding.textInputLayout, binding.textInputLayout4, binding.textInputLayout2, binding.textInputLayout3, binding.textInputLayout5).forEach {
+            it.layoutParams = (it.layoutParams as ViewGroup.MarginLayoutParams).apply {
+                setMargins(24, 0, 24, 0) // Отступы слева и справа
+            }
+        }
+        
 
         setupClickableText()
 
