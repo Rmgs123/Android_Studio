@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-# AndroidMobile
-=======
->>>>>>> Stashed changes
 # Task 6
 
 In this final task_6 I created (again uploaded all my local work at once) DB for storing all of my user's activities and displaying them.
@@ -21,7 +15,3 @@ _____
 ![image](https://github.com/user-attachments/assets/e03adbec-271a-42cd-ae34-ec5c94ede412)
 
 _____
-<<<<<<< Updated upstream
-=======
->>>>>>> 0b24ba54e5787974fc7b4c350d9ed0363e547a3c
->>>>>>> Stashed changes
