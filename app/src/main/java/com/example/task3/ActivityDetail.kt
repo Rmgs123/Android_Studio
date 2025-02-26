@@ -20,7 +20,7 @@ class ActivityDetail : AppCompatActivity() {
         val time = intent.getStringExtra("time") ?: "Неизвестно"
         val date = intent.getStringExtra("date") ?: "Неизвестно"
         val user_nick = intent.getStringExtra("user_nick") ?: ""
-        val position = intent.getIntExtra("position", -1) // Позиция задачи
+        val position = intent.getIntExtra("position", -1)
 
         findViewById<TextView>(R.id.detailDistance).text = distance
         findViewById<TextView>(R.id.detailTime).text = time

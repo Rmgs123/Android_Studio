@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
                 .add(R.id.fragment_container, ActivityFragment(), "ACTIVITY_FRAGMENT")
                 .commit()
         }
+
 
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -63,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             transaction.show(existingFragment)
         } else {
 
-            transaction.add(R.id.fragment_container, fragment, tag) // Используем add вместо replace
+            transaction.add(R.id.fragment_container, fragment, tag)
         }
 
         transaction.commitNow()
