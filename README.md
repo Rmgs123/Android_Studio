@@ -1,6 +1,6 @@
 # Task 5
 
-In task_5 I finished making remaining screens.
+In task_5 I finished remaining screens.
 
 Preview:
 
